@@ -483,13 +483,10 @@ code{
 
 const API_KEY = "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";
 
+// استخدام بروكسي بديل يعتمد على تفعيل الـ CORS بمرونة عالية
 const API_URL =
-    "https://corsproxy.io/?https://router.huggingface.co/v1/chat/completions";
-
-/*
-   يمكنك تغيير الموديل إلى أي موديل Chat
-   متاح لك على Hugging Face Router.
-*/
+    "https://api.allorigins.win/raw?url=" +
+    encodeURIComponent("https://router.huggingface.co/v1/chat/completions");
 
 const MODEL =
     "openai/gpt-oss-120b:fastest";
