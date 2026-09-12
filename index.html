@@ -484,7 +484,7 @@ code{
 const API_KEY = "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";
 
 const API_URL =
-    "https://router.huggingface.co/v1/chat/completions";
+    "https://corsproxy.io/?https://router.huggingface.co/v1/chat/completions";
 
 /*
    يمكنك تغيير الموديل إلى أي موديل Chat
@@ -615,11 +615,11 @@ async function sendMessage(){
     if(
         !API_KEY ||
         API_KEY ===
-        "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"
+        "PUT_YOUR_HUGGINGFACE_TOKEN_HERE"
     ){
 
         addMessage(
-            "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",
+            "ضع Hugging Face API Token داخل API_KEY أولاً.",
             "ai"
         );
 
